@@ -3,13 +3,15 @@
 Scribble Border creates a visual border effect around a provided Widget. The aim of this border is to look like a user has drawn a rectangle or round shape around the provided child.
 Since this is not a real Border it can be used around every visual Widget. Scribble Border also has a BackgroundPaint class, which can be used to fill a background with a Gradient.
 
-![Example](https://github.com/NicolasDurant/stick_it/blob/main/example/assets/Simulator%20Screen%20Recording%20-%20iPhone%2012%20Pro%20Max%20-%202021-08-30%20at%2015.36.09.gif)
+![Example1](https://github.com/NicolasDurant/scribble_border/blob/master/example/assets/Simulator%20Screen%20Shot%20-%20iPhone%2012%20-%202022-01-25%20at%2016.57.13.png)
+![Example2](https://github.com/NicolasDurant/scribble_border/blob/master/example/assets/Simulator%20Screen%20Shot%20-%20iPhone%2012%20-%202022-01-25%20at%2016.57.20.png)
+![Example3](https://github.com/NicolasDurant/scribble_border/blob/master/example/assets/Simulator%20Screen%20Shot%20-%20iPhone%2012%20-%202022-01-25%20at%2017.06.15.png)
 
 ## Getting Started
 
 Add [scribble_border](https://pub.dev/packages/scribble_border) as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
 You can also check the [installing page](https://pub.dev/packages/scribble_border/install).
-Check out the [example page](https://pub.dev/packages/scribble_border/example) or down below, for an example implementation of the package.
+Check out the [example page](https://pub.dev/packages/scribble_border/example) for a more detailed example or down below, for a simple example implementation of the package.
 
 ## Usage
 
@@ -19,44 +21,24 @@ import 'package:scribble_border/scribble_border.dart';
 ```
 
 ### Example
+Refer to the [example.md](https://github.com/NicolasDurant/scribble_border/blob/master/example/example.md) to see how the screenshots are implemented.
 ```dart
 import 'package:flutter/material.dart';
-import 'package:stick_it/stick_it.dart';
+import 'package:scribble_border/scribble_border.dart';
 
-class SimplestExample extends StatelessWidget {
-  const SimplestExample({Key? key}) : super(key: key);
-  static String routeName = 'simplest-example';
-  static String routeTitle = 'Simplest Example';
-  final String _background =
-      'https://images.unsplash.com/photo-1545147986-a9d6f2ab03b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80';
+class Example extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(routeTitle),
-      ),
-      body: StickIt(
-        /// The [StickIt] Class only requires two named parameters.
-        ///
-        /// [Widget] child - the child that the stickers should be placed upon.
-        /// [List<Image>] stickerList - the list of stickers available to the user.
-        ///
-        /// StickIt supports a lot of styling related optional named parameters,
-        /// that you can change and check out in the AdvancedExample. (tbd)
-        child: Image.network(_background),
-        stickerList: [
-          Image.asset('assets/icons8-anubis-48.png'),
-          Image.asset('assets/icons8-bt21-shooky-48.png'),
-          Image.asset('assets/icons8-fire-48.png'),
-          Image.asset('assets/icons8-jake-48.png'),
-          Image.asset('assets/icons8-keiji-akaashi-48.png'),
-          Image.asset('assets/icons8-mate-48.png'),
-          Image.asset('assets/icons8-pagoda-48.png'),
-          Image.asset('assets/icons8-spring-48.png'),
-          Image.asset('assets/icons8-totoro-48.png'),
-          Image.asset('assets/icons8-year-of-dragon-48.png'),
-        ],
+      body: Center(
+        child: ScribbleBorder(
+          child: Container(
+            height: 100,
+            width: 100,
+            color: Colors.white,
+          ),
+        ),
       ),
     );
   }
