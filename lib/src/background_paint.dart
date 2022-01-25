@@ -75,3 +75,18 @@ class BackgroundPaint extends StatelessWidget {
     );
   }
 }
+
+class Corners {
+  final Radius topLeft;
+  final Radius topRight;
+  final Radius bottomLeft;
+  final Radius bottomRight;
+
+  const Corners(this.topLeft, this.topRight, this.bottomLeft, this.bottomRight);
+
+  Corners.all(double radius)
+      : this.topLeft = Radius.circular(radius),
+        this.topRight = Radius.circular(radius),
+        this.bottomLeft = Radius.circular(radius),
+        this.bottomRight = Radius.circular(radius);
+}

@@ -1,106 +1,40 @@
+# Cookbook
+
+All the snippets are from the [example project](https://github.com/NicolasDurant/scribble_border/tree/main/example).
+
+## Usage
+### Preview
+![Example](https://github.com/NicolasDurant/scribble_border/blob/main/example/assets/Simulator%20Screen%20Recording%20-%20iPhone%2012%20Pro%20Max%20-%202021-08-30%20at%2015.36.09.gif)
+### Code
+```dart
 import 'package:flutter/material.dart';
 import 'package:scribble_border/scribble_border.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+class Example extends StatelessWidget {
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Scribble Border',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        fontFamily: 'IndieFlower',
-        textTheme: ThemeData.light().textTheme.copyWith(
-              headline1: const TextStyle(
-                color: Colors.black54,
-                fontSize: 96,
-                fontWeight: FontWeight.w100,
-                wordSpacing: -1.5,
-              ),
-              headline2: const TextStyle(
-                color: Colors.black54,
-                fontSize: 60,
-                fontWeight: FontWeight.w100,
-                wordSpacing: -0.5,
-              ),
-              headline3: const TextStyle(
-                color: Colors.black54,
-                fontSize: 48,
-                fontWeight: FontWeight.w400,
-                wordSpacing: -0.0,
-              ),
-              headline4: const TextStyle(
-                color: Colors.black54,
-                fontSize: 34,
-                fontWeight: FontWeight.w400,
-                wordSpacing: 0.25,
-              ),
-              headline5: const TextStyle(
-                color: Colors.black54,
-                fontSize: 24,
-                fontWeight: FontWeight.w400,
-                wordSpacing: 0.0,
-              ),
-              headline6: const TextStyle(
-                color: Colors.black54,
-                fontSize: 20.0,
-                fontWeight: FontWeight.w600,
-                wordSpacing: 0.15,
-              ),
-              subtitle1: const TextStyle(
-                color: Colors.black54,
-                fontSize: 16.0,
-                fontWeight: FontWeight.w400,
-                wordSpacing: 0.15,
-              ),
-              subtitle2: const TextStyle(
-                color: Colors.black54,
-                fontSize: 14.0,
-                fontWeight: FontWeight.w600,
-                wordSpacing: 0.1,
-              ),
-              bodyText1: const TextStyle(
-                color: Colors.black54,
-                fontSize: 18.0,
-                fontWeight: FontWeight.w400,
-                wordSpacing: 0.5,
-              ),
-              bodyText2: const TextStyle(
-                color: Colors.black54,
-                fontSize: 16.0,
-                fontWeight: FontWeight.w400,
-                wordSpacing: 0.25,
-              ),
-              button: const TextStyle(
-                color: Colors.black54,
-                fontSize: 14.0,
-                fontWeight: FontWeight.w600,
-                wordSpacing: 1.25,
-              ),
-              caption: const TextStyle(
-                color: Colors.black54,
-                fontSize: 12.0,
-                fontWeight: FontWeight.w400,
-                wordSpacing: 0.4,
-              ),
-              overline: const TextStyle(
-                color: Colors.black54,
-                fontSize: 10.0,
-                fontWeight: FontWeight.w400,
-                wordSpacing: 1.5,
-              ),
-            ),
+    return Scaffold(
+      body: Center(
+        child: ScribbleBorder(
+          child: Container(
+            height: 100,
+            width: 100,
+            color: Colors.white,
+          ),
+        ),
       ),
-      home: MyHomePage(),
     );
   }
 }
+```
+### Preview
+![Example](https://github.com/NicolasDurant/scribble_border/blob/main/example/assets/Simulator%20Screen%20Recording%20-%20iPhone%2012%20Pro%20Max%20-%202021-08-30%20at%2015.36.09.gif)
+### Code
+Code found under [Example](https://github.com/NicolasDurant/scribble_border/blob/main/example/assets/Simulator%20Screen%20Recording%20-%20iPhone%2012%20Pro%20Max%20-%202021-08-30%20at%2015.36.09.gif).
+```dart
+import 'package:flutter/material.dart';
+import 'package:scribble_border/scribble_border.dart';
 
 class MyHomePage extends StatelessWidget {
   MyHomePage({Key? key}) : super(key: key);
@@ -463,3 +397,4 @@ class MyHomePage extends StatelessWidget {
     );
   }
 }
+```

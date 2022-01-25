@@ -2,6 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+import '../scribble_border.dart';
+
 /// [BackgroundPainter] serves as a [CustomPainter] for the [BackgroundPaint] class.
 /// It will draw lines in a rectangle shape around the provided [Widget] in [BackgroundPaint].
 /// It takes the size of a [Rect] around provided [child] and a [gradient] to determine its color. [RadientGradient] should be chosen.
@@ -76,19 +78,4 @@ class BackgroundPainter extends CustomPainter {
     var random = new Random();
     return (min + random.nextInt(max - min)).toDouble();
   }
-}
-
-class Corners {
-  final Radius topLeft;
-  final Radius topRight;
-  final Radius bottomLeft;
-  final Radius bottomRight;
-
-  const Corners(this.topLeft, this.topRight, this.bottomLeft, this.bottomRight);
-
-  Corners.all(double radius)
-      : this.topLeft = Radius.circular(radius),
-        this.topRight = Radius.circular(radius),
-        this.bottomLeft = Radius.circular(radius),
-        this.bottomRight = Radius.circular(radius);
 }
