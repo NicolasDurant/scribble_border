@@ -1,7 +1,2 @@
-library scribble_border;
-
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'src/background_paint.dart';
+export 'src/scribble_border.dart';
