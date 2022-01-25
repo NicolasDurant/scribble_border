@@ -29,9 +29,8 @@ class Example extends StatelessWidget {
 }
 ```
 ### Preview
-![Example1](https://github.com/NicolasDurant/scribble_border/blob/master/example/assets/Simulator%20Screen%20Shot%20-%20iPhone%2012%20-%202022-01-25%20at%2016.57.20.png)
-![Example2](https://github.com/NicolasDurant/scribble_border/blob/master/example/assets/Simulator%20Screen%20Shot%20-%20iPhone%2012%20-%202022-01-25%20at%2016.57.13.png)
-![Example3](https://github.com/NicolasDurant/scribble_border/blob/master/example/assets/Simulator%20Screen%20Shot%20-%20iPhone%2012%20-%202022-01-25%20at%2017.06.15.png)
+|![Example1](https://github.com/NicolasDurant/scribble_border/blob/master/example/assets/Simulator%20Screen%20Shot%20-%20iPhone%2012%20-%202022-01-25%20at%2016.57.20.png)|![Example2](https://github.com/NicolasDurant/scribble_border/blob/master/example/assets/Simulator%20Screen%20Shot%20-%20iPhone%2012%20-%202022-01-25%20at%2016.57.13.png) | ![Example3](https://github.com/NicolasDurant/scribble_border/blob/master/example/assets/Simulator%20Screen%20Shot%20-%20iPhone%2012%20-%202022-01-25%20at%2017.06.15.png)|
+|:---:|:---:|:---:|
 ### Code
 Code found under [Example](https://github.com/NicolasDurant/scribble_border/tree/master/example/main.dart).
 ```dart
