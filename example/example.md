@@ -4,8 +4,7 @@ All the snippets are from the [example project](https://github.com/NicolasDurant
 
 ## Usage
 ### Preview
-|![Example](https://github.com/NicolasDurant/scribble_border/blob/master/example/assets/Simulator%20Screen%20Shot%20-%20iPhone%2012%20-%202022-01-25%20at%2017.13.18.png)|||
-|:---:|:---:|:---:|
+![Example](https://github.com/NicolasDurant/scribble_border/blob/master/example/assets/Simulator%20Screen%20Shot%20-%20iPhone%2012%20-%202022-01-25%20at%2017.13.18.png)
 ### Code
 ```dart
 import 'package:flutter/material.dart';
